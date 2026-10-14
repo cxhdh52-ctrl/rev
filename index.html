@@ -2,262 +2,608 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Saved UK - Revolut £500 Bonus</title>
-  <meta name="description" content="Premium verified deals for Revolut. Claim your £500 Revolut Bonus. Codes verified daily.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Revolut Student Voucher</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body {
-      background: #fff;
-      color: #202124;
-      font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: #efefef;
+      color: #151515;
     }
-    button { font-family: inherit; cursor: pointer; }
-    .page { min-height: 100dvh; overflow-x: hidden; }
-    .toast-wrap { display: flex; justify-content: center; padding: 16px 16px 0; }
-    .toast {
-      position: relative; display: flex; align-items: center; gap: 12px;
-      width: 100%; max-width: 560px; overflow: hidden; background: #fff;
-      border-radius: 12px; padding: 12px 14px 12px 20px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.06);
-      animation: toast-slide 0.5s ease forwards;
+
+    .page {
+      width: 100%;
+      max-width: 477px;
+      margin: 0 auto;
+      min-height: 100vh;
+      padding: 24px 0 40px;
     }
-    .toast-accent { position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: #34a853; }
-    .toast-avatar {
-      width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0;
-      display: flex; align-items: center; justify-content: center;
-      background: rgba(52,168,83,0.15); color: #34a853; font-size: 12px; font-weight: 700;
+
+    .online-pill {
+      position: sticky;
+      top: 12px;
+      z-index: 100;
+      width: fit-content;
+      margin: 0 auto 28px;
+      background: #ffffff;
+      border-radius: 999px;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.09);
+      font-size: 19px;
+      font-weight: 500;
+      color: #333333;
+      backdrop-filter: blur(2px);
+      transition: box-shadow 0.2s;
     }
-    .toast-content { flex: 1; min-width: 0; }
-    .toast-name { font-size: 14px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .toast-sub { font-size: 12px; color: #5f6368; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .toast-amount {
-      flex-shrink: 0; background: rgba(52,168,83,0.15); color: #34a853;
-      font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px;
+
+    .online-pill.sticky-shadow {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     }
-    @keyframes toast-slide {
-      from { opacity: 0; transform: translateY(-16px); }
-      to { opacity: 1; transform: translateY(0); }
+
+    .online-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #27c05a;
+      flex-shrink: 0;
+      animation: pulse-green 1.5s infinite;
     }
-    .hero { position: relative; overflow: hidden; padding: 24px 16px 32px; text-align: center; }
-    .sparkle { position: absolute; color: rgba(251,191,36,0.4); font-size: 24px; }
-    .sparkle-1 { top: 40px; left: 12%; }
-    .sparkle-2 { top: 80px; right: 10%; font-size: 28px; }
-    .logo-box {
-      width: 72px; height: 72px; margin: 0 auto 16px; border-radius: 18px;
-      background: linear-gradient(135deg, #0075eb 0%, #00a0ff 50%, #005bb5 100%);
-      display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 8px 24px rgba(0,117,235,0.3);
+
+    @keyframes pulse-green {
+      0% { opacity: 0.6; transform: scale(0.9); }
+      100% { opacity: 1; transform: scale(1.1); }
     }
-    .logo-box svg { width: 40px; height: 40px; }
-    .brand {
-      font-size: 36px; font-weight: 800; letter-spacing: -0.5px;
-      background: linear-gradient(90deg, #0075eb, #005bb5, #0075eb);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      background-clip: text;
+
+    .logo-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 28px;
     }
-    .tagline { font-size: 15px; color: #5f6368; margin: 6px 0 16px; }
-    .badges { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+
+    .revolut-logo {
+      width: 116px;
+      height: 116px;
+      display: block;
+      border-radius: 28px;
+      background: #191c1f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    .revolut-logo span {
+      font-size: 52px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -2px;
+    }
+
+    .hero-card {
+      background: #f7f7f7;
+      border-radius: 26px;
+      padding: 30px 26px 28px;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.03);
+    }
+
     .badge {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: #f1f3f4; color: #3c4043; font-size: 13px; font-weight: 600;
-      padding: 6px 14px; border-radius: 999px;
+      width: fit-content;
+      margin: 0 auto 28px;
+      padding: 14px 24px;
+      border-radius: 999px;
+      border: 2px solid #c8d9f4;
+      background: #eef4ff;
+      color: #0666eb;
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
-    .badge-dot { width: 8px; height: 8px; border-radius: 50%; background: #34a853; }
-    .badge-geo { background: #f1f3f4; }
-    .offers { padding: 0 16px 24px; max-width: 560px; margin: 0 auto; }
-    .offer {
-      background: #fff; border-radius: 16px; padding: 20px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 0 0 1px rgba(0,0,0,0.04);
-      margin-bottom: 16px;
+
+    .badge-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #0666eb;
+      flex-shrink: 0;
     }
-    .offer-top { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px; }
-    .offer-icon {
-      width: 48px; height: 48px; border-radius: 12px; flex-shrink: 0;
-      display: flex; align-items: center; justify-content: center;
-      background: #c41230; color: #fff; font-weight: 800; font-size: 13px;
-      overflow: hidden;
+
+    h1 {
+      margin: 0 auto 22px;
+      text-align: center;
+      font-size: 32px;
+      line-height: 1.16;
+      letter-spacing: -0.04em;
+      font-weight: 900;
+      max-width: 390px;
     }
-    .offer-icon img { width: 100%; height: 100%; object-fit: cover; }
-    .offer-info { flex: 1; min-width: 0; }
-    .offer-name { font-size: 18px; font-weight: 700; color: #202124; margin-bottom: 2px; }
-    .discount { font-size: 14px; font-weight: 600; color: #34a853; margin-bottom: 8px; }
-    .pills { display: flex; flex-wrap: wrap; gap: 6px; }
-    .pill {
-      font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px;
+
+    .accent {
+      color: #0666eb;
     }
-    .pill-muted { background: #f1f3f4; color: #5f6368; }
-    .pill-left { background: #fce8e6; color: #c5221f; }
+
+    .subtext {
+      margin: 0 auto 24px;
+      text-align: center;
+      color: #848484;
+      font-size: 21px;
+      line-height: 1.45;
+      font-weight: 400;
+      max-width: 360px;
+    }
+
+    .bodytext {
+      margin: 0 auto 28px;
+      text-align: center;
+      color: #6b6b6b;
+      font-size: 17px;
+      line-height: 1.5;
+      max-width: 340px;
+    }
+
     .cta {
-      display: flex; align-items: center; justify-content: center;
-      width: 100%; height: 52px; border: 0; border-radius: 12px;
-      background: #c5221f; color: #fff; font-size: 16px; font-weight: 700;
-      text-decoration: none; transition: background 0.15s; cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 74px;
+      background: linear-gradient(180deg, #1a7cff 0%, #0666eb 100%);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 999px;
+      gap: 14px;
+      font-size: 20px;
+      font-weight: 800;
+      box-shadow: 0 12px 24px rgba(6, 102, 235, 0.28);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      cursor: pointer;
     }
-    .cta:hover { background: #b30000; }
-    .cta:active { transform: scale(0.98); }
-    .note { text-align: center; padding-bottom: 56px; max-width: 560px; margin: 0 auto; padding-left: 16px; padding-right: 16px; }
-    .note-row { font-size: 15px; font-weight: 500; color: #1e3a8a; margin-bottom: 4px; }
-    .note-sub { font-size: 14px; color: #5f6368; margin-bottom: 20px; }
-    .how { background: #eaf4fd; border-radius: 22px; padding: 32px 20px; text-align: left; }
-    .how h2, .faq-title { text-align: center; font-weight: 800; color: #0f172a; }
-    .how h2 { font-size: 26px; }
-    .how-sub { text-align: center; font-size: 15px; color: #5f6368; margin: 0 0 24px; }
-    .how ol { list-style: none; display: flex; flex-direction: column; gap: 16px; }
-    .how li { display: flex; align-items: flex-start; gap: 12px; }
-    .step-num {
-      width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; background: #1d6fd8; color: #fff;
-      font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center;
+
+    .cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 28px rgba(6, 102, 235, 0.32);
     }
-    .step-text { padding-top: 4px; font-size: 15px; font-weight: 500; color: #1e293b; }
-    .faq-title { font-size: 22px; margin-bottom: 16px; }
-    .faqs { display: flex; flex-direction: column; gap: 10px; padding-bottom: 56px; max-width: 560px; margin: 0 auto; padding-left: 16px; padding-right: 16px; }
-    .faq { overflow: hidden; border-radius: 12px; background: #eaf4fd; }
-    .faq.open { background: #1d6fd8; }
-    .faq-btn {
-      width: 100%; min-height: 44px; border: 0; background: transparent;
-      display: flex; align-items: center; justify-content: space-between; gap: 12px;
-      padding: 14px 16px; text-align: left; font-size: 15px; font-weight: 600; color: #0f172a;
+
+    .cta-arrow {
+      font-size: 25px;
+      line-height: 1;
+      margin-top: -1px;
     }
-    .faq.open .faq-btn { color: #fff; }
-    .chev { width: 18px; height: 18px; flex-shrink: 0; transition: transform 0.2s; color: #1d6fd8; }
-    .faq.open .chev { transform: rotate(180deg); color: #fff; }
-    .faq-a { display: none; padding: 0 16px 16px; font-size: 14px; line-height: 1.6; color: rgba(255,255,255,0.9); }
-    .faq.open .faq-a { display: block; }
-    .footer {
-      text-align: center; padding: 24px 16px 40px; font-size: 12px; color: #9aa0a6;
+
+    .page-footer {
+      padding: 30px 18px 0;
+      text-align: center;
+    }
+
+    .footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 26px;
+      flex-wrap: wrap;
+      color: #747474;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+
+    .footer-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-revolut-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 6px;
+      background: #191c1f;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .footer-verified {
+      color: #2fba5f;
+      font-weight: 700;
+    }
+
+    .verified-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #2fba5f;
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .footer-copy {
+      color: #7c7c7c;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    @media (max-width: 420px) {
+      .page { padding-top: 18px; }
+      .hero-card { padding: 24px 18px 22px; border-radius: 22px; }
+      .online-pill { font-size: 17px; padding: 12px 18px; top: 10px; }
+      .revolut-logo { width: 102px; height: 102px; }
+      .revolut-logo span { font-size: 46px; }
+      .badge { font-size: 16px; padding: 12px 18px; }
+      h1 { font-size: 28px; }
+      .subtext { font-size: 18px; }
+      .bodytext { font-size: 16px; }
+      .cta { min-height: 68px; font-size: 18px; }
+      .footer-row { gap: 16px; font-size: 14px; }
+      .footer-copy { font-size: 14px; }
+    }
+
+    /* Floating popup */
+    .coupon-popup {
+      position: fixed;
+      top: max(12px, env(safe-area-inset-top, 12px));
+      right: max(12px, env(safe-area-inset-right, 12px));
+      z-index: 9999;
+      max-width: 300px;
+      width: auto;
+      min-width: 240px;
+      background: #ffffff;
+      border-radius: 28px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(6, 102, 235, 0.2);
+      padding: 12px 18px 12px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: 'Inter', system-ui;
+      border-left: 5px solid #0666eb;
+      transition: opacity 0.25s ease, transform 0.2s ease;
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .coupon-popup.fade-out {
+      opacity: 0;
+      transform: translateX(8px);
+    }
+
+    .popup-icon {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(145deg, #eef4ff, #f5f9ff);
+      border-radius: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.02), 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .popup-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .popup-title {
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: #0666eb;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .popup-title span {
+      background: #e8f0ff;
+      padding: 2px 8px;
+      border-radius: 40px;
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .popup-message {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.3;
+      color: #1e293b;
+      word-break: break-word;
+    }
+
+    .popup-message strong {
+      color: #0666eb;
+      font-weight: 800;
+    }
+
+    .popup-time {
+      font-size: 10px;
+      font-weight: 500;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 2px;
+    }
+
+    @keyframes gentlePulse {
+      0% { transform: scale(1); background-color: #ffffff; border-left-color: #0666eb; }
+      30% { transform: scale(1.01); background-color: #f0f6ff; border-left-color: #3b8aff; }
+      100% { transform: scale(1); background-color: #ffffff; border-left-color: #0666eb; }
+    }
+
+    .popup-pulse {
+      animation: gentlePulse 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    }
+
+    @media (max-width: 480px) {
+      .coupon-popup {
+        max-width: 270px;
+        min-width: 210px;
+        padding: 10px 14px 10px 12px;
+        top: 10px;
+        right: 10px;
+      }
+      .popup-icon { width: 34px; height: 34px; font-size: 20px; }
+      .popup-message { font-size: 13px; }
+      .popup-title { font-size: 11px; }
+    }
+
+    @media (max-width: 380px) {
+      .coupon-popup { max-width: 250px; padding: 8px 12px; }
+      .popup-message { font-size: 12px; }
     }
   </style>
 </head>
 <body>
-  <div class="page">
-    <div class="toast-wrap">
-      <div class="toast" id="toast" style="animation: 0.5s ease 0s 1 normal forwards running toast-slide;">
-        <div class="toast-accent"></div>
-        <div class="toast-avatar" id="toast-avatar">SK</div>
-        <div class="toast-content">
-          <div class="toast-name" id="toast-name">Sarah K.</div>
-          <div class="toast-sub" id="toast-sub">Claimed a Revolut Bonus · London, UK</div>
-        </div>
-        <div class="toast-amount">£500.00</div>
+  <main class="page">
+    <div class="online-pill" id="onlinePill">
+      <span class="online-dot"></span>
+      <span id="onlineCount">1.372 online now</span>
+    </div>
+
+    <div class="logo-wrap" aria-label="Revolut logo">
+      <div class="revolut-logo">
+        <span>R</span>
       </div>
     </div>
-    <section class="hero">
-      <span class="sparkle sparkle-1">✦</span>
-      <span class="sparkle sparkle-2">⚡</span>
-      <div class="logo-box">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
-          <line x1="7" y1="7" x2="7.01" y2="7"></line>
-        </svg>
+
+    <section class="hero-card">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Exclusive Offer</span>
       </div>
-      <h1 class="brand">Saved UK</h1>
-      <p class="tagline">Premium Deals • Verified Daily</p>
-      <div class="badges">
-        <span class="badge"><span class="badge-dot"></span> 372 Active</span>
-        <span class="badge badge-geo">🌐 US, UK, Canada &amp; Australia only</span>
-      </div>
+
+      <h1>
+        Get a <span class="accent">€500</span> Revolut<br>
+        Voucher Today
+      </h1>
+
+      <p class="subtext">
+        Complete a short (4–6 Tasks) survey to unlock your exclusive reward.
+      </p>
+
+      <p class="bodytext">
+        Limited availability. Selected users may qualify for this special €500 Revolut Voucher opportunity.
+      </p>
+
+      <a class="cta" href="https://giftclick.org/aff_c?offer_id=2903&aff_id=157440" target="_blank" rel="noopener noreferrer">
+        <span>Get Started</span>
+        <span class="cta-arrow">→</span>
+      </a>
     </section>
-    <section class="offers">
-      <article class="offer">
-        <div class="offer-top">
-          <div class="offer-icon">R</div>
-          <div class="offer-info">
-            <h2 class="offer-name">Revolut</h2>
-            <p class="discount">Get your £500 Revolut Bonus</p>
-            <div class="pills">
-              <span class="pill pill-muted" id="used-count">1,876 used today</span>
-              <span class="pill pill-left" id="left-count">52 left</span>
-            </div>
-          </div>
+
+    <footer class="page-footer">
+      <div class="footer-row">
+        <div class="footer-item footer-brand">
+          <span class="footer-revolut-icon">R</span>
+          <span>Your Digital Bank.</span>
         </div>
-        <a class="cta" id="main-cta" href="https://giftclick.org/aff_c?offer_id=2903&aff_id=157440" target="_blank" rel="noopener noreferrer">Get the Code</a>
-      </article>
-    </section>
-    <section class="note">
-      <p class="note-row">Codes verified daily • Limited availability</p>
-      <p class="note-sub">Requires completing 4–5 partner deals.</p>
-      <div class="how">
-        <h2>How It Works</h2>
-        <p class="how-sub">Here's exactly what to expect.</p>
-        <ol>
-          <li><span class="step-num">1</span><span class="step-text">Click on "Get the Code"</span></li>
-          <li><span class="step-num">2</span><span class="step-text">Enter your email and basic information</span></li>
-          <li><span class="step-num">3</span><span class="step-text">Complete 4–5 recommended deals (required)</span></li>
-          <li><span class="step-num">4</span><span class="step-text">Claim your £500 Revolut Bonus</span></li>
-        </ol>
-      </div>
-    </section>
-    <section>
-      <h2 class="faq-title">Frequently Asked Questions</h2>
-      <div class="faqs">
-        <div class="faq">
-          <button class="faq-btn" type="button">How long does it take to get rewards? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m6 9 6 6 6-6"></path></svg></button>
-          <p class="faq-a">Most users receive their Revolut Bonus immediately. If it does not arrive immediately, please allow up to 24 hours for system processing.</p>
-        </div>
-        <div class="faq">
-          <button class="faq-btn" type="button">Do I need to finish all deals? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m6 9 6 6 6-6"></path></svg></button>
-          <p class="faq-a">No, you only need to complete the specific number of deals required for the reward tier you select. Completing 4–5 deals successfully meets the standard program requirements.</p>
-        </div>
-        <div class="faq">
-          <button class="faq-btn" type="button">What kind of deals are available? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m6 9 6 6 6-6"></path></svg></button>
-          <p class="faq-a">Deals typically include free trial offers, product samples, app installs, and special promotions from trusted partner brands. All deals are clearly labelled before you start.</p>
-        </div>
-        <div class="faq">
-          <button class="faq-btn" type="button">Do I need to pay anything? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m6 9 6 6 6-6"></path></svg></button>
-          <p class="faq-a">No payment is required to claim your bonus. Some partner deals may offer paid upgrades, but these are completely optional.</p>
+
+        <div class="footer-item footer-verified">
+          <span class="verified-icon">✔</span>
+          <span>Verified Offer</span>
         </div>
       </div>
-    </section>
-    <div class="footer">
-      © 2026 Saved UK • Premium verified deals
+
+      <div class="footer-copy">© Revolut Rewards, Inc. 2026</div>
+    </footer>
+  </main>
+
+  <!-- Floating live voucher popup -->
+  <div id="liveCouponPopup" class="coupon-popup">
+    <div class="popup-icon">🎁</div>
+    <div class="popup-content">
+      <div class="popup-title">
+        🔥 JUST CLAIMED
+        <span>€500</span>
+      </div>
+      <div class="popup-message" id="popupNameMessage">
+        <strong>Layla R.</strong> redeemed €500 Revolut voucher!
+      </div>
+      <div class="popup-time">
+        <span>🕒 just now</span>
+        <span>•</span>
+        <span>voucher active</span>
+      </div>
     </div>
   </div>
+
   <script>
-    const claims = [
-      { initials: "SK", name: "Sarah K.", place: "London, UK" },
-      { initials: "JM", name: "James M.", place: "Manchester, UK" },
-      { initials: "EL", name: "Emma L.", place: "Birmingham, UK" },
-      { initials: "OT", name: "Oliver T.", place: "Leeds, UK" },
-      { initials: "AW", name: "Amy W.", place: "Glasgow, UK" },
-      { initials: "DH", name: "Daniel H.", place: "Bristol, UK" },
-      { initials: "CP", name: "Chloe P.", place: "Liverpool, UK" },
-      { initials: "RB", name: "Ryan B.", place: "Cardiff, UK" }
-    ];
-    let claimIndex = 0;
-    function rotateToast() {
-      claimIndex = (claimIndex + 1) % claims.length;
-      const c = claims[claimIndex];
-      document.getElementById("toast-avatar").textContent = c.initials;
-      document.getElementById("toast-name").textContent = c.name;
-      document.getElementById("toast-sub").textContent = `Claimed a Revolut Bonus · ${c.place}`;
-      const toast = document.getElementById("toast");
-      toast.style.animation = "none";
-      toast.offsetHeight;
-      toast.style.animation = "toast-slide 0.5s ease forwards";
-    }
-    setInterval(rotateToast, 4500);
-    let used = 1876;
-    let left = 52;
-    setInterval(() => {
-      if (left > 5 && Math.random() > 0.4) {
-        used += 1;
-        left -= 1;
-        document.getElementById("used-count").textContent = used.toLocaleString() + " used today";
-        document.getElementById("left-count").textContent = left + " left";
+    (function() {
+      const onlineSpan = document.getElementById('onlineCount');
+      const onlinePill = document.getElementById('onlinePill');
+      
+      if (onlineSpan) {
+        let currentOnline = 1383;
+
+        function formatNumber(value) {
+          return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+        }
+
+        function updateOnline() {
+          const delta = Math.floor(Math.random() * 9) - 4;
+          currentOnline += delta;
+          if (currentOnline < 1372) currentOnline = 1372;
+          if (currentOnline > 1405) currentOnline = 1405;
+          onlineSpan.innerText = `${formatNumber(currentOnline)} online now`;
+        }
+
+        updateOnline();
+        setInterval(updateOnline, 1900);
       }
-    }, 8000);
-    document.querySelectorAll(".faq-btn").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const faq = btn.parentElement;
-        const isOpen = faq.classList.contains("open");
-        document.querySelectorAll(".faq").forEach(f => f.classList.remove("open"));
-        if (!isOpen) faq.classList.add("open");
-      });
-    });
+
+      if (onlinePill) {
+        const observer = new IntersectionObserver(([entry]) => {
+          if (!entry.isIntersecting) {
+            onlinePill.classList.add('sticky-shadow');
+          } else {
+            onlinePill.classList.remove('sticky-shadow');
+          }
+        }, { threshold: 0, rootMargin: "-10px 0px 0px 0px" });
+        observer.observe(onlinePill);
+      }
+
+      const femaleNames = [
+        "Emma", "Olivia", "Ava", "Sophia", "Isabella", "Mia", "Charlotte", "Amelia", "Harper", "Evelyn",
+        "Abigail", "Emily", "Elizabeth", "Sofia", "Avery", "Ella", "Madison", "Scarlett", "Victoria", "Aria",
+        "Grace", "Chloe", "Camila", "Penelope", "Riley", "Layla", "Lillian", "Nora", "Zoe", "Hannah",
+        "Lily", "Addison", "Eleanor", "Natalie", "Brooklyn", "Leah", "Savannah", "Audrey", "Claire", "Skylar"
+      ];
+      
+      const maleNames = [
+        "Liam", "Noah", "Oliver", "Elijah", "James", "William", "Benjamin", "Lucas", "Henry", "Alexander",
+        "Mason", "Michael", "Ethan", "Daniel", "Jacob", "Logan", "Jackson", "Levi", "Sebastian", "Mateo",
+        "Jack", "Owen", "Theodore", "Aiden", "Samuel", "Joseph", "John", "David", "Wyatt", "Matthew",
+        "Luke", "Asher", "Carter", "Julian", "Grayson", "Leo", "Jayden", "Gabriel", "Isaac", "Lincoln"
+      ];
+      
+      const allNames = [...femaleNames, ...maleNames];
+      
+      const lastNames = [
+        "S.", "J.", "M.", "W.", "B.", "C.", "D.", "F.", "G.", "H.", "K.", "L.", "P.", "R.", "T.", "V.", "Y.",
+        "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis", "Rodriguez", "Martinez", "Wilson",
+        "Anderson", "Thomas", "Taylor", "Moore", "Jackson", "Martin", "Lee", "White", "Harris", "Clark"
+      ];
+
+      function getRandomAmericanName() {
+        const firstName = allNames[Math.floor(Math.random() * allNames.length)];
+        const lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
+        return { firstName, lastName };
+      }
+
+      function buildRedeemMessage(firstName, lastName) {
+        return `<strong>${firstName} ${lastName}</strong> redeemed €500 Revolut voucher!`;
+      }
+
+      const popupContainer = document.getElementById('liveCouponPopup');
+      const popupMessageDiv = document.getElementById('popupNameMessage');
+      let isAnimating = false;
+
+      function updatePopupWithAnimation() {
+        if (isAnimating || !popupContainer) return;
+        isAnimating = true;
+
+        popupContainer.classList.add('fade-out');
+        
+        setTimeout(() => {
+          const { firstName, lastName } = getRandomAmericanName();
+          const newMessage = buildRedeemMessage(firstName, lastName);
+
+          if (popupMessageDiv) {
+            popupMessageDiv.innerHTML = newMessage;
+          }
+          
+          if (popupContainer) {
+            popupContainer.classList.remove('fade-out');
+            popupContainer.classList.add('popup-pulse');
+
+            setTimeout(() => {
+              if (popupContainer) popupContainer.classList.remove('popup-pulse');
+            }, 380);
+          }
+          
+          isAnimating = false;
+        }, 200);
+      }
+      
+      function initPopup() {
+        if (!popupMessageDiv) return;
+        const { firstName, lastName } = getRandomAmericanName();
+        popupMessageDiv.innerHTML = buildRedeemMessage(firstName, lastName);
+        
+        setInterval(() => {
+          updatePopupWithAnimation();
+        }, 5000);
+      }
+      
+      initPopup();
+      
+      const iconElement = document.querySelector('.popup-icon');
+      let iconCycle = 0;
+
+      setInterval(() => {
+        if (iconElement && Math.random() > 0.65) {
+          const icons = ["🎁", "🏷️", "💸", "⭐", "🔥", "💎"];
+          iconCycle = (iconCycle + 1) % icons.length;
+          iconElement.textContent = icons[iconCycle];
+
+          setTimeout(() => {
+            if (iconElement) iconElement.textContent = "🎁";
+          }, 1200);
+        }
+      }, 9000);
+      
+      const timeSpan = document.querySelector('.popup-time span:first-child');
+
+      if (timeSpan) {
+        const timeVariants = ["🕒 just now", "⚡ seconds ago", "✨ just claimed", "🔔 new voucher", "🏃‍♀️ live"];
+        let timeIdx = 0;
+
+        setInterval(() => {
+          if (timeSpan && Math.random() > 0.6) {
+            timeIdx = (timeIdx + 1) % timeVariants.length;
+            timeSpan.innerHTML = timeVariants[timeIdx];
+
+            setTimeout(() => {
+              if (timeSpan) timeSpan.innerHTML = "🕒 just now";
+            }, 2000);
+          }
+        }, 8500);
+      }
+      
+      function adjustPopupPosition() {
+        if (!popupContainer) return;
+        const topVal = Math.max(12, (window.innerHeight * 0.02));
+        const rightVal = Math.max(12, (window.innerWidth * 0.02));
+        popupContainer.style.top = `${topVal}px`;
+        popupContainer.style.right = `${rightVal}px`;
+      }
+
+      adjustPopupPosition();
+      window.addEventListener('resize', adjustPopupPosition);
+    })();
   </script>
 </body>
 </html>
